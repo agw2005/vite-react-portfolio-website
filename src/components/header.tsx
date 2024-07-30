@@ -31,22 +31,22 @@ function Header({ HeaderImage }: HeaderProp) {
         }}
       >
         <ul className="nav__list">
-          <li className="nav__item">
+          <li className="nav__item" onClick={handleClick}>
             <a href="#home" className="nav__link">
               Home
             </a>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onClick={handleClick}>
             <a href="#services" className="nav__link">
               My services
             </a>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onClick={handleClick}>
             <a href="#about" className="nav__link">
               About me
             </a>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onClick={handleClick}>
             <a href="#work" className="nav__link">
               My work
             </a>
