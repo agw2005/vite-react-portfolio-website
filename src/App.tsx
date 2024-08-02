@@ -37,14 +37,14 @@ let myWorkLinks = [
 
 function App() {
   return (
-    <>
+    <body>
       <Header HeaderImage={placeholder1} />
       <Introduction IntroImage={placeholder2} />
       <MyService />
       <AboutMe AboutMeImage={placeholder3} />
       <MyWork img={myWorkImages} link={myWorkLinks} />
       <Footer />
-    </>
+    </body>
   );
 }
 
