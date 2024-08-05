@@ -5,8 +5,15 @@ interface PortfolioItemProp {
 
 function PortfolioItem({ PortfolioImage, PortfolioLink }: PortfolioItemProp) {
   return (
-    <a href={PortfolioLink} target="_blank" className="portfolio__item">
-      <img src={PortfolioImage} alt="placeholder4" className="portfolio__img" />
+    <a
+      href={PortfolioLink}
+      target="_blank"
+      className="focus:relative focus:z-2 bg-accent overflow-hidden"
+    >
+      <img
+        src={PortfolioImage}
+        className="portfolio__img hover:scale-125 hover:opacity-50"
+      />
     </a>
   );
 }

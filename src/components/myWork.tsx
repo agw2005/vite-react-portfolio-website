@@ -7,13 +7,15 @@ interface MyWorkProp {
 
 function MyWork(prop: MyWorkProp) {
   return (
-    <section className="my-work" id="work">
-      <h2 className="section__title section__title--work">My Work</h2>
-      <p className="section__subtitle section__subtitle--work">
+    <section className="py-20 px-8 bg-dark text-light text-center" id="work">
+      <h2 className="section__title section__title--work text-4xl leading-none mb-5">
+        My Work
+      </h2>
+      <p className="m-0 text-xl section__subtitle--work text-accent font-black mb-8">
         A selection of my range of work
       </p>
 
-      <div className="portfolio">
+      <div className="grid grid-cols-divPortfolioList">
         <PortfolioItem
           PortfolioImage={prop.img[0]}
           PortfolioLink={prop.link[0]}

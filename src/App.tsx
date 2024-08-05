@@ -37,7 +37,7 @@ let myWorkLinks = [
 
 function App() {
   return (
-    <body>
+    <body className="bg-light text-dark m-0 font-sans text-base leading-relaxed">
       <Header HeaderImage={placeholder1} />
       <Introduction IntroImage={placeholder2} />
       <MyService />
